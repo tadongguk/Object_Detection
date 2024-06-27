@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "tadongguk",
+    "projectKey": "tadongguk_Object_Detection"
+  }
+}
