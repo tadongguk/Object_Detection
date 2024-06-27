@@ -39,19 +39,6 @@ def annotate_image(image, detections, confidence_threshold=0.5):
     return image
 
 
-def detect_objects(image_path):
-    # Đọc hình ảnh từ file
-    image = cv2.imread(image_path)
-    # Xử lý hình ảnh
-    detections = process_image(image)
-    # Vẽ hình chữ nhật xung quanh đối tượng
-    annotated_image = annotate_image(image.copy(), detections)
-    # Hiển thị hình ảnh
-    cv2.imshow("Output", annotated_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-
 def main():
     st.title('Object Detection for Images')
     file = st.file_uploader('Upload Image', type=['jpg', 'png', 'jpeg'])
